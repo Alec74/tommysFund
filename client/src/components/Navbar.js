@@ -8,6 +8,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
+
 // 
 
 
@@ -64,8 +65,12 @@ export default function AppNavbar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="About" {...a11yProps(1)} />
+          <Tab label="Home" {...a11yProps(0)} >
+            <Link to="/" />
+          </Tab>
+          <Tab label="About" {...a11yProps(1)} >
+            <Link to="/about" />
+          </Tab>
           <Tab label="Donate" {...a11yProps(2)} />
           <Tab label="Contact Us" {...a11yProps(3)} />
           <Tab label="Blog" {...a11yProps(4)} />
