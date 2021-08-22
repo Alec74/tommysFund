@@ -76,22 +76,22 @@ export default function AppNavbar() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Home
+        {/* Home */}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        About
+        {/* About */}
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Donate
+        {/* Donate */}
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Contact Us
+        {/* Contact Us */}
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Blog
+        {/* Blog */}
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Memories
+        {/* Memories */}
       </TabPanel>
     </div>
   );
