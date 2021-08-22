@@ -61,20 +61,18 @@ export default function AppNavbar() {
     setValue(newValue);
   };
 
+  const allTabs = ['/', '/about', '/donate', '/contactus', '/blog', '/memories'];
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Home" {...a11yProps(0)} >
-            <Link to="/" />
-          </Tab>
-          <Tab label="About" {...a11yProps(1)} >
-            <Link to="/about" />
-          </Tab>
-          <Tab label="Donate" {...a11yProps(2)} />
-          <Tab label="Contact Us" {...a11yProps(3)} />
-          <Tab label="Blog" {...a11yProps(4)} />
-          <Tab label="Memories" {...a11yProps(5)} />
+          <Tab label="Home" {...a11yProps(0)}  value="/" component={Link} to={allTabs[0]} />
+          <Tab label="About" {...a11yProps(1)}  value="/about" component={Link} to={allTabs[1]} />
+          <Tab label="Donate" {...a11yProps(2)}  value="/donate" component={Link} to={allTabs[2]} />
+          <Tab label="Contact Us" {...a11yProps(3)}  value="/contactus" component={Link} to={allTabs[3]} />
+          <Tab label="Blog" {...a11yProps(4)}  value="/blog" component={Link} to={allTabs[4]}  />
+          <Tab label="Memories" {...a11yProps(5)}  value="/memories" component={Link} to={allTabs[5]}  />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
