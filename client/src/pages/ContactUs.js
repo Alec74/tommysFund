@@ -33,8 +33,8 @@ const ContactUs = () => {
 
     return (
         <div className={classes.root} >
-            <Grid container spacing={3}>
-                <Grid item xs={12} justifyContent="stretch" >
+            <Grid container spacing={3} justifyContent="center">
+                <Grid item xs={12}  >
                     <ContactForm></ContactForm>
                 </Grid>
             </Grid>
