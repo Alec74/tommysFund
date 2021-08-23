@@ -61,63 +61,11 @@ function Blog(props) {
             spacing={10}>
                 <Grid item xs={12} spacing={10}>
                     <Paper className={classes.paper}>
-                        {/* <form onSubmit={handleFormSubmit}>
-                            <TextField required id="standard-required" label="Username" onChange={handleChange} />
-                            <TextField required id="standard-required" label="Email" onChange={handleChange} />
-                            <TextField
-                                required id="standard-password-input"
-                                label="Password"
-                                type="password"
-                                autoComplete="current-password"
-                                onChange={handleChange}
-                            />
-                            <Button variant="outlined" type="submit">Signup</Button>
-                        </form> */}
                         <SignupCard/>
                     </Paper>
                 </Grid>
             </Grid>
         </div>
-        // <div className="container my-1">
-        //     <Link to="/login">← Go to Login</Link>
-
-        //     <h2>Blog</h2>
-        //     <form onSubmit={handleFormSubmit}>
-        //         <div className="flex-row space-between my-2">
-        //             <label htmlFor="username">Username:</label>
-        //             <input
-        //                 placeholder="First"
-        //                 name="username"
-        //                 type="username"
-        //                 id="username"
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div className="flex-row space-between my-2">
-        //             <label htmlFor="email">Email:</label>
-        //             <input
-        //                 placeholder="youremail@test.com"
-        //                 name="email"
-        //                 type="email"
-        //                 id="email"
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div className="flex-row space-between my-2">
-        //             <label htmlFor="pwd">Password:</label>
-        //             <input
-        //                 placeholder="******"
-        //                 name="password"
-        //                 type="password"
-        //                 id="pwd"
-        //                 onChange={handleChange}
-        //             />
-        //         </div>
-        //         <div className="flex-row flex-end">
-        //             <button type="submit">Submit</button>
-        //         </div>
-        //     </form>
-        // </div>
     );
 }
 

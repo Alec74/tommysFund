@@ -55,18 +55,19 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AppNavbar() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   const allTabs = ['/', '/about', '/donate', '/contactus', '/blog', '/memories'];
+  const [value, setValue] = useState('/');
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+        <Tabs value={value} onChange={handleChange} aria-label="Tab routing">
           <Tab label="Home" {...a11yProps(0)}  value="/" component={Link} to={allTabs[0]} />
           <Tab label="About" {...a11yProps(1)}  value="/about" component={Link} to={allTabs[1]} />
           <Tab label="Donate" {...a11yProps(2)}  value="/donate" component={Link} to={allTabs[2]} />
@@ -75,24 +76,24 @@ export default function AppNavbar() {
           <Tab label="Memories" {...a11yProps(5)}  value="/memories" component={Link} to={allTabs[5]}  />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
-        {/* Home */}
+      {/* <TabPanel value={value} index={0}>
+        Home
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {/* About */}
+        About
       </TabPanel>
       <TabPanel value={value} index={2}>
-        {/* Donate */}
+        Donate
       </TabPanel>
       <TabPanel value={value} index={3}>
-        {/* Contact Us */}
+        Contact Us
       </TabPanel>
       <TabPanel value={value} index={4}>
-        {/* Blog */}
+        Blog
       </TabPanel>
       <TabPanel value={value} index={5}>
-        {/* Memories */}
-      </TabPanel>
+        Memories
+      </TabPanel> */}
     </div>
   );
 }

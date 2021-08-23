@@ -4,8 +4,18 @@ const { ApolloServer } = require('apollo-server-express');
 const db = require('./config/connection');
 const { typeDefs, resolvers } = require('./schema');
 const { authMiddleware } = require('./utils/auth');
+// var router = express.Router();
+
 
 const app = express();
+
+// ContactUs mailing Component
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+require("dotenv").config();
+
+
+
 const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
