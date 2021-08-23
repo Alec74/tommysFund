@@ -9,6 +9,8 @@ import Blog from './pages/Blog';
 import Memories from './pages/Memories';
 import Navbar from './components/Navbar';
 
+
+
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
