@@ -51,7 +51,7 @@ export default function Home() {
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <h1>
-                            The Tommy Fund's Mission Statement
+                            The Tom Fund's Mission Statement
                         </h1>
                         <h3>
                             Provide funds and resources to explore,
