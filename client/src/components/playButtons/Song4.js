@@ -7,13 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
-import song from '../../music/My_Brain.mp3'
+import song from '../../music/SOS(Cover).mp3'
 // import song2 from '../../music/What_Can_I_Become.mp3'
 
 import React, { Component } from "react";
 
 
-class Song1 extends Component {
+class Song4 extends Component {
     // Create state
     state = {
 
@@ -69,4 +69,4 @@ class Song1 extends Component {
     }
 }
 
-export default Song1;
+export default Song4;

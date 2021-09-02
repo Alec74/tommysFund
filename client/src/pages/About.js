@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: theme.spacing(2),
-        textAlign: 'center',
+        textAlign: 'left',
         color: theme.palette.text.secondary,
     },
     title: {
@@ -34,10 +34,35 @@ const About = () => {
                         <Typography className={classes.title} color="textSecondary">
                             Welcome!
                         </Typography>
+                        <Typography className={classes.title} color="textSecondary">
+                            What is the TommyFund?
+                        </Typography>
+                        <Typography className={classes.body} color="body2">
+                            The TommyFund is a fundraiser started by a family afflicted by Schizoaffective disorder.
+                        </Typography>
+                        <Typography className={classes.title} color="textSecondary">
+                            Mission Statement
+                        </Typography>
+                        <Typography className={classes.body} color="body2">
+                        Provide funds and resources to explore, 
+                            learn, and improve the lives of those suffering
+                            from mental illness to improve their health care, 
+                            professional, and/or educational pursuits.
+                        </Typography>
+                        <Typography className={classes.title} color="textSecondary">
+                            The Facts and Story
+                        </Typography>
                         <Typography className={classes.body} variant="body2" component="p">
-                            Add info about shizo affective disorder here with links to sources and what such. 
+                            What is schizoaffective disorder?
+                            A mental health condition including schizophrenia and mood disorder symptoms.
+                            Schizoaffective disorder is a combination of symptoms of schizophrenia and mood disorder,
+                            such as depression or bipolar disorder. Symptoms may occur at the same time or at different
+                            times.
+                            Schizoaffective disorder is a chronic mental health condition characterized primarily by
+                            symptoms of schizophrenia, such as hallucinations or delusions, and symptoms of a mood
+                            disorder, such as mania and depression.
                             <br></br>
-                            Explain what the fund is... the goals of it, why it exists and where it plans to go in the future.
+                            
                         </Typography>
                     </Paper>
                 </Grid>

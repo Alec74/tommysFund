@@ -1,72 +1,37 @@
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import React from 'react';
+import { useQuery } from '@apollo/client';
 
-import SignupCard from '../components/logCards/signupCard';
+import PostList from '../components/PostList';
+import PostForm from '../components/PostForm';
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-import { ADD_USER } from '../utils/mutations';
+import { QUERY_POSTS } from '../utils/queries';
 
-// import Button from '@material-ui/core/Button';
-// import TextField from '@material-ui/core/TextField';
+const Blog = () => {
+  const { loading, data } = useQuery(QUERY_POSTS);
+  const posts = data?.posts || [];
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-}));
-
-
-function Blog(props) {
-    const classes = useStyles();
-    const [formState, setFormState] = useState({ email: '', password: '' });
-    const [addUser] = useMutation(ADD_USER);
-
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        const mutationResponse = await addUser({
-            variables: {
-                email: formState.email,
-                password: formState.password,
-                username: formState.username,
-            },
-        });
-        const token = mutationResponse.data.addUser.token;
-        Auth.login(token);
-    };
-
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormState({
-            ...formState,
-            [name]: value,
-        });
-    };
-
-    return (
-        <div className={classes.root}>
-            <Grid container 
-            direction="column"
-            justifyContent="center"
-            alignItems="stretch"
-            spacing={10}>
-                <Grid item xs={12} spacing={10}>
-                    <Paper className={classes.paper}>
-                        <SignupCard/>
-                    </Paper>
-                </Grid>
-            </Grid>
+  return (
+    <main>
+      <div className="flex-row justify-center">
+        <div
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: '1px dotted #1a1a1a' }}
+        >
+          <PostForm />
         </div>
-    );
-}
+        <div className="col-12 col-md-8 mb-3">
+          {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <PostList
+            posts={posts}
+              title="Some Feed for Post(s)..."
+            />
+          )}
+        </div>
+      </div>
+    </main>
+  );
+};
 
 export default Blog;
