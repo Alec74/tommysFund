@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     height: 300,
   },
 });
-
+ 
 export default function Card1() {
   const classes = useStyles();
 
@@ -24,7 +24,7 @@ export default function Card1() {
         <CardMedia
           className={classes.media}
           image={two}
-          title="Contemplative Reptile"
+          title="Butch and Tom"
         />
       </CardActionArea>
     </Card>

@@ -17,7 +17,7 @@ const Footer = () => {
         )}
         <h4>
           Made 
-          by the McGlone Foundation for The Tommy Fund.
+          by the McGlone Foundation for The Tom Fund.
         </h4>
       </div>
     </footer>

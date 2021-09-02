@@ -61,10 +61,10 @@ const About = () => {
                             </Dropdown.Menu>
                         </Dropdown>
                         <Typography className={classes.title} color="textSecondary">
-                            What is The Tommy Fund?
+                            What is The Tom Fund?
                         </Typography>
                         <Typography className={classes.body} color="body2">
-                            The Tommy Fund is a fundraiser started by a family afflicted by Schizoaffective disorder.
+                            The Tom Fund is a non-profit organization started by a family afflicted by Schizoaffective disorder.
                         </Typography>
                         <br></br>
                         <Typography className={classes.title} id="missionStatement" color="textSecondary">

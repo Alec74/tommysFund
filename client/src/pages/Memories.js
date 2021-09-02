@@ -5,6 +5,7 @@ import FirstSongCard from '../components/musicCards/FirstSongCard';
 import SecondSongCard from '../components/musicCards/SecondSongCard';
 import ThirdSongCard from '../components/musicCards/ThirdSongCard';
 import FourthSongCard from '../components/musicCards/FourthSongCard';
+import FifthSongCard from '../components/musicCards/FifthSongCard';
 
 import Grid from '@material-ui/core/Grid';
 
@@ -28,6 +29,9 @@ const Memories = () => {
                     </Grid>
                     <Grid item xs={6} sm={3}>
                         <FourthSongCard />
+                    </Grid>
+                    <Grid item xs={6} sm={3}>
+                        <FifthSongCard />
                     </Grid>
                 </Grid>
             </div>
