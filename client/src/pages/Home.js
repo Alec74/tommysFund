@@ -29,27 +29,34 @@ export default function Home() {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
-                <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}><Card2/></Paper>
+                <Grid item xs={12}>
+                    <Paper className={classes.paper}>
+                        <h2>
+                            In Memoriam to Thomas McGlone
+                        </h2>
+                    </Paper>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}><Card1/></Paper>
+                    <Paper className={classes.paper}><Card2 /></Paper>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}><Card3/></Paper>
+                    <Paper className={classes.paper}><Card1 /></Paper>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}><Card4/></Paper>
+                    <Paper className={classes.paper}><Card3 /></Paper>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Paper className={classes.paper}><Card4 /></Paper>
                 </Grid>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <h1>
-                            Mission Statement
+                            The Tommy Fund's Mission Statement
                         </h1>
                         <h3>
-                            Provide funds and resources to explore, 
+                            Provide funds and resources to explore,
                             learn, and improve the lives of those suffering
-                            from mental illness to improve their health care, 
+                            from mental illness to improve their health care,
                             professional, and/or educational pursuits.
                         </h3>
                     </Paper>
