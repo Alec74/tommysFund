@@ -23,7 +23,7 @@ export default function Card3() {
                 <CardMedia
                     className={classes.media}
                     image={three}
-                    title="Contemplative Reptile"
+                    title="Lego Maniac"
                 />
             </CardActionArea>
         </Card>

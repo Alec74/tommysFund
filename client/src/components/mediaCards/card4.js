@@ -23,7 +23,7 @@ export default function Card4() {
                 <CardMedia
                     className={classes.media}
                     image={four}
-                    title="Contemplative Reptile"
+                    title="King of the Rocks"
                 />
             </CardActionArea>
         </Card>

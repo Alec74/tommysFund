@@ -24,7 +24,7 @@ export default function Card2() {
         <CardMedia
           className={classes.media}
           image={one}
-          title="Contemplative Reptile"
+          title="Butch and Tom"
         />
       </CardActionArea>
     </Card>
