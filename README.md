@@ -39,6 +39,17 @@
 
   Navigate to the live webpage! https://powerful-crag-83957.herokuapp.com/blog
 
+  ## Home Page
+  ![image of webpage](./images/Screenshot(67).png)
+  ## About Page
+  ![image of webpage](./images/Screenshot(68).png)
+  ## Blog Page
+  ![image of webpage](./images/Screenshot(69).png)
+  ## Profile Page
+  ![image of webpage](./images/Screenshot(71).png)
+  ## Memories Page
+  ![image of webpage](./images/Screenshot(70).png)
+
   ## Contributing
 
   For contributions please open an issue or new pull request
