@@ -32,6 +32,11 @@ const Header = () => {
           </Link>
         </div>
         <div>
+          <Link className="text-light" to="/contact">
+            <h1 className="m-0">Contact</h1>
+          </Link>
+        </div>
+        <div>
           {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-info m-2" to="/me">
