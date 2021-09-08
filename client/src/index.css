@@ -1711,16 +1711,27 @@ label form [type='radio'] {
 
 #space {
   margin-top: 10px;
-  background-color: #cdd1ce;
+  /* background-color: #cdd1ce; */
+}
+
+#marginBottom {
+  margin-bottom: 20px;
 }
 
 #changeFooter {
-  background-color: #cdd1ce;
+  /* background-color: #cdd1ce; */
+  color: blanchedalmond;
+  background-image: url("https://www.maxpixel.net/static/photo/1x/Background-Flare-Bokeh-Light-Header-Banner-1050616.jpg");
+}
+
+#textColor {
+  color: blanchedalmond;
 }
 
 #changeFontSize {
   font-size: 25px;
   margin-left: 10px;
+  color: blanchedalmond;
 }
 
 #song1 {
@@ -1753,3 +1764,27 @@ label form [type='radio'] {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcH8pY4QT80k0PrqyJPzsqEY1ZkJtmEWPqxg&usqp=CAU");
   padding-bottom: 32.5px;
 }
+
+/* #homeHero {
+  padding-top: 150px;
+  background-image: url("https://thumbs.dreamstime.com/b/sunrise-dramatic-blue-sky-orange-sun-rays-breaking-clouds-nature-background-hope-concept-110818674.jpg");
+} */
+
+#image {
+  background-image: url("https://www.maxpixel.net/static/photo/1x/Background-Flare-Bokeh-Light-Header-Banner-1050616.jpg");
+  /* padding: 10px 10px 10px 10px; */
+}
+
+#backgroundImage {
+  background-image: url("https://image.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg");
+}
+
+#buttonColor {
+  background-color: #e7ff2e;
+}
+
+/* https://cdn.pixabay.com/photo/2017/12/27/19/49/banner-3043585_1280.jpg */
+/* https://cdn.pixabay.com/photo/2015/11/19/08/49/banner-1050620_1280.jpg */
+/* https://www.maxpixel.net/static/photo/1x/Background-Flare-Bokeh-Light-Header-Banner-1050616.jpg */
+
+

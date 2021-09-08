@@ -73,6 +73,7 @@ const Memories = () => {
                 <br></br>
                 <Button variant="light"><a href="https://soundcloud.com/tmcg45" target="_blank">Link to his soundcloud</a></Button>
                 <br></br>
+                <br/>
             </div>
         </>
     )

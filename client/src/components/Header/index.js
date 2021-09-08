@@ -15,16 +15,16 @@ const Header = () => {
   };
   return (
 
-    <Navbar collapseOnSelect expand="lg" bg="info" variant="light">
+    <Navbar collapseOnSelect expand="lg" id="image" variant="light">
       <Container>
         <Navbar.Brand id="changeFontSize" href="/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav id="changeFontSize" className="me-auto">
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/memories">Memories</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link id="textColor" href="/about">About</Nav.Link>
+            <Nav.Link id="textColor" href="/blog">Blog</Nav.Link>
+            <Nav.Link id="textColor" href="/memories">Memories</Nav.Link>
+            <Nav.Link id="textColor" href="/contact">Contact</Nav.Link>
           </Nav>
           <div>
             {Auth.loggedIn() ? (

@@ -84,7 +84,7 @@ const Contact = () => {
                     <Form.Label>Body</Form.Label>
                     <Form.Control onChange={handleChange} id="body" placeholder="Your message here" as="textarea" rows={3} />
                 </Form.Group>
-                <Button variant="warning" type="submit">
+                <Button id="buttonColor" type="submit">
                     <a id="aTag"
                         target="_top">
                         Send mail!
