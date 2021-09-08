@@ -25,7 +25,7 @@ const Blog = () => {
           ) : (
             <PostList
             posts={posts}
-              title="Some Feed for Post(s)..."
+              title="Recent Post(s)..."
             />
           )}
         </div>
