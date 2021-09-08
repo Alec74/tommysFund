@@ -17,10 +17,10 @@ const Header = () => {
 
     <Navbar collapseOnSelect expand="lg" bg="info" variant="light">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand id="changeFontSize" href="/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav id="changeFontSize" className="me-auto">
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/blog">Blog</Nav.Link>
             <Nav.Link href="/memories">Memories</Nav.Link>

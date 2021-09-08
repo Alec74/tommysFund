@@ -30,7 +30,7 @@ export default function Home() {
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
-                    <Paper className={classes.paper}>
+                    <Paper id="space" className={classes.paper}>
                         <h2>
                             In Memoriam to Thomas McGlone
                         </h2>

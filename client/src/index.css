@@ -1706,3 +1706,20 @@ label form [type='radio'] {
     align-content: center;
   }
 }
+
+
+
+#space {
+  margin-top: 10px;
+  background-color: #cdd1ce;
+}
+
+#changeFooter {
+  background-color: #cdd1ce;
+}
+
+#changeFontSize {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
