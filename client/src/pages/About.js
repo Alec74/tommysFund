@@ -78,7 +78,7 @@ const About = () => {
                         </Typography>
                         <br></br>
                         <Typography className={classes.title} color="textSecondary">
-                            The Facts and Story
+                            The Facts
                         </Typography>
                     </Paper>
                     <Paper className={classes.paper}>
@@ -96,6 +96,12 @@ const About = () => {
                     </Paper>
                     <Paper className={classes.paper}>
                         <Typography className={classes.title} id="storyTom" color="textSecondary">The Story of Tom</Typography>
+                        <Typography className={classes.title} color="textSecondary">Summary</Typography>
+                            <Typography className={classes.body} variant="body2" component="p">
+                                A number of years ago, our dear son Thomas James McGlone (20) came home from his second year of college, a stellar academic and athletic high school and beginning of college experience, asking for a break. He was on the fast track and needed a moment in time to sit on the bench. We said ok, gave him a break, and discovered his mental illness unfold during the next couple years. Many stories and chapters of chaotic behavior, modest stability, and back again to chaos. Around and round we went until the diagnosis: schizoaffective disorder.
+                            </Typography>
+                            <br></br>
+                        
                         <Button href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} color="textSecondary">

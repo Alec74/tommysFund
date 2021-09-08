@@ -44,13 +44,13 @@ export default function FirstSongCard() {
   const theme = useTheme();
 
   return (
-    <Card className={classes.root}>
+    <Card id="song2" className={classes.root}>
       <div className={classes.details}>
         <CardContent  style={{textAlign: "center", justifyContent: "center"}} className={classes.content}>
           <Typography component="h5" variant="h5">
             What Can I Become
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
+          <Typography variant="subtitle1" color="light">
             Thomas McGlone
           </Typography>
         </CardContent>

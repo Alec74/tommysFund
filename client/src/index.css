@@ -1706,3 +1706,50 @@ label form [type='radio'] {
     align-content: center;
   }
 }
+
+
+
+#space {
+  margin-top: 10px;
+  background-color: #cdd1ce;
+}
+
+#changeFooter {
+  background-color: #cdd1ce;
+}
+
+#changeFontSize {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#song1 {
+  background-image: url("https://cdn.pixabay.com/photo/2020/01/02/10/15/background-image-4735444_1280.png");
+  padding-bottom: 32.5px;
+}
+
+#song2 {
+  background-image: url("https://www.publicdomainpictures.net/pictures/130000/nahled/textured-background-14428431021FT.jpg");
+  color: white;
+  padding-bottom: 32.5px;
+}
+
+#song3 {
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/24/18/05/background-4876988_1280.jpg");
+  padding-bottom: -10px;
+}
+
+#song4 {
+  background-image: url("https://www.maxpixel.net/static/photo/1x/Cyan-Paint-Background-Zoom-Zoom-Background-Blue-6019528.jpg");
+  padding-bottom: 32.5px;
+}
+
+#song5 {
+  background-image: url("https://www.stockvault.net/data/2019/11/25/270700/preview16.jpg");
+  padding-bottom: 32.5px;
+}
+
+#song6 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcH8pY4QT80k0PrqyJPzsqEY1ZkJtmEWPqxg&usqp=CAU");
+  padding-bottom: 32.5px;
+}
