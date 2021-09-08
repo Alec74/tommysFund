@@ -37,7 +37,9 @@
 
   ## Usage
 
-  Navigate to the live webpage! https://powerful-crag-83957.herokuapp.com/blog
+  Navigate to the live webpage! https://powerful-crag-83957.herokuapp.com/
+
+  This application is now live at http://thetomfund.com/ too!
 
   ## Home Page
   ![image of webpage](./images/Screenshot(67).png)

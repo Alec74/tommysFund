@@ -367,7 +367,7 @@ const About = () => {
                             this messy and complicated illness. If it is simply a conversation to share your story then so be it.
                             If there is a need for financial assistance, please ask. We genuinely would like to research and
                             learn more stories about how this disease has affected your life or those you may know. Please
-                            feel free to reach us at the email: TheTomFund@gmail.com. (email tbd)
+                            feel free to reach us at the email: thetmcgfund@gmail.com.
                             Thank you for listening to our story.
                         </Typography>
                         <br></br>
