@@ -16,6 +16,10 @@ import img1 from '../images/IMG_1380.jpg';
 import img2 from '../images/IMG_4139.jpg';
 import img3 from '../images/IMG_4206.PNG';
 import img4 from '../images/IMG_8461.jpg';
+import img5 from '../images/IMG_1031.jpg';
+import img6 from '../images/IMG_1045.jpg';
+import img7 from '../images/IMG_2606.JPG';
+import img8 from '../images/IMG_2652.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +62,7 @@ export default function Home() {
                                     alt="First slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3>Family "Portrait"</h3>
+                                    <h3 id="txtOutline">Family "Portrait"</h3>
                                     <p>-Circa 2019</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -70,7 +74,7 @@ export default function Home() {
                                     id="cEdit"
                                 />
                                 <Carousel.Caption>
-                                    <h3>Baby Tom</h3>
+                                    <h3 id="txtOutline">Baby Tom</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -80,7 +84,7 @@ export default function Home() {
                                     alt="Third slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3>Senior Night</h3>
+                                    <h3 id="txtOutline">Senior Night</h3>
                                     <p>
                                         -Circa 2013
                                     </p>
@@ -93,10 +97,55 @@ export default function Home() {
                                     alt="Fourth slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3>New Brother</h3>
-                                    <p>-Circa 1997</p>
+                                    <h3 id="txtOutline">New Brother</h3>
+                                    <p style={{color:'black'}}>-Circa 1997</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={img5}
+                                    alt="Fifth slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3 id="txtOutline">Happy 25th!</h3>
+                                    <p style={{color:'black'}}>-Circa 2020</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={img6}
+                                    alt="Sixth slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3 id="txtOutline">Father and Son</h3>
+                                    <p style={{color:'black'}}>-Circa 1999</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={img7}
+                                    alt="Seventh slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3 id="txtOutline">Alumni and High School Football Coach</h3>
+                                    <p>-Circa 2019</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={img8}
+                                    alt="Eighth slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3 id="txtOutline">Happy Thanksgiving!</h3>
+                                    <p style={{color:'black'}}>-Circa 2019</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            
                         </Carousel>
                     </Paper>
                 </Grid>
@@ -123,14 +172,6 @@ export default function Home() {
                             from mental illness to improve their health care,
                             professional, and/or educational pursuits.
                         </h3>
-                    </Paper>
-                    <Paper className={classes.paper}>
-                        <h3>
-                            Board of Directors
-                        </h3>
-                        <h5>
-                            Test
-                        </h5>
                     </Paper>
                 </Grid>
             </Grid>
