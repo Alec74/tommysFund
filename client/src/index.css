@@ -1938,11 +1938,7 @@ label form [type='radio'] {
 }
 
 
-@media screen and (max-width: 1700px) {
-  #fixS, #fixM {
-    padding-bottom: 31.5px;
-  }
-}
+
 
 @media screen and (max-width: 1100px) {
   #fixPa, #fixP {

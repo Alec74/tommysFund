@@ -111,7 +111,12 @@ const Memories = () => {
     return (
         <>
             <div>
-                <br/>
+                <br></br>
+                <Typography className={classes.title} id="center" color="textSecondary">
+                    Music of Tom's
+                </Typography>
+                <br></br>
+                
                 <div className="App">
                     <Player
                         currentSongIndex={currentSongIndex}
@@ -120,18 +125,14 @@ const Memories = () => {
                         songs={songs}
                     />
                 </div>
-                <br></br>
-                <Typography className={classes.title} id="center" color="textSecondary">
-                    Music of Tom's
-                </Typography>
-                <br></br>
+                <br />
                 <Grid container spacing={3}>
 
                     <Grid item xs={12} sm={3}>
                         <FirstSongCard />
                     </Grid>
                     <Grid item xs={12} sm={3}>
-                        <SecondSongCard /> 
+                        <SecondSongCard />
                     </Grid>
                     <Grid item xs={12} sm={3}>
                         <ThirdSongCard />
