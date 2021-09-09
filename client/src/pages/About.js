@@ -4,7 +4,18 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card'
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import alec from '../images/seniorPortraitHeadshot.jpeg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +32,10 @@ const useStyles = makeStyles((theme) => ({
     },
     body: {
         fontSize: 25
-    }
+    },
+    media: {
+        height: 140,
+    },
 }));
 
 const About = () => {
@@ -36,30 +50,6 @@ const About = () => {
                         <Typography className={classes.title} id="top" color="textSecondary">
                             Welcome!
                         </Typography>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                                Table of Contents
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#missionStatement">Mission Statement</Dropdown.Item>
-                                <Dropdown.Item href="#storyTom">01 - Life as we knew it</Dropdown.Item>
-                                <Dropdown.Item href="#symptoms">02 - Strange Symptoms</Dropdown.Item>
-                                <Dropdown.Item href="#beginnning">03 - The Beginning</Dropdown.Item>
-                                <Dropdown.Item href="#little">04 - Little did we know</Dropdown.Item>
-                                <Dropdown.Item href="#diagnosis">05 - Diagnosis</Dropdown.Item>
-                                <Dropdown.Item href="#stepOne">06 - Step One... plus...</Dropdown.Item>
-                                <Dropdown.Item href="#stablization">07 - Stablization</Dropdown.Item>
-                                <Dropdown.Item href="#fastForward">08 - Fast Forward</Dropdown.Item>
-                                <Dropdown.Item href="#letsGet">09 - Let's Get to Thirty</Dropdown.Item>
-                                <Dropdown.Item href="#summer2020">10 - Summer time 2020...</Dropdown.Item>
-                                <Dropdown.Item href="#mid-summer">11 - Mid-Summer 2020...</Dropdown.Item>
-                                <Dropdown.Item href="#trip">12 - The Trip.</Dropdown.Item>
-                                <Dropdown.Item href="#serious">13 - Serious News.</Dropdown.Item>
-                                <Dropdown.Item href="#burial">14 - The Burial...</Dropdown.Item>
-                                <Dropdown.Item href="#future">15 - Future Hope and Promise...</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
                         <Typography className={classes.title} color="textSecondary">
                             What is The Tom Fund?
                         </Typography>
@@ -67,6 +57,152 @@ const About = () => {
                             The Tom Fund is a non-profit organization started by a family afflicted by Schizoaffective disorder.
                         </Typography>
                         <br></br>
+                        <Typography className={classes.title} id="team" color="textSecondary">
+                            Meet the Associated Team
+                        </Typography>
+                        <Container>
+                            <Row>
+                                <h2>Board of Directors and Founding Members</h2>
+                                <Col xs={12} sm={6} md={4} lg={3}>
+                                    <Card id="fixM" className={classes.root}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image="/static/images/cards/contemplative-reptile.jpg"
+                                                title="Mike McGlone"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    Michael McGlone
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Financial Advisor
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        {/* <CardActions>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Share
+                                            </Button>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Learn More
+                                            </Button>
+                                        </CardActions> */}
+                                    </Card>
+                                </Col>
+                                <Col xs={12} sm={6} md={4} lg={3}>
+                                    <Card id="fixS" className={classes.root}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image="/static/images/cards/contemplative-reptile.jpg"
+                                                title="Susan McGlone"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    Susan McGlone
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Director
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        {/* <CardActions>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Share
+                                            </Button>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Learn More
+                                            </Button>
+                                        </CardActions> */}
+                                    </Card>
+                                </Col>
+                                {/* </Row>
+                            <Row> */}
+                                <Col xs={12} sm={6} md={4} lg={3}>
+                                    <Card id="fixPa" className={classes.root}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image="/static/images/cards/contemplative-reptile.jpg"
+                                                title="Patrick McGlone"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    Patrick McGlone, MD
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Medical Advisor
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        {/* <CardActions>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Share
+                                            </Button>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Learn More
+                                            </Button>
+                                        </CardActions> */}
+                                    </Card>
+                                </Col>
+                                <Col xs={12} sm={6} md={4} lg={3}>
+                                    <Card id="fixP" className={classes.root}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                className={classes.media}
+                                                image="/static/images/cards/contemplative-reptile.jpg"
+                                                title="Peter McGlone"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    Peter McGlone, CPA
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Tax Advisor
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        {/* <CardActions>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Share
+                                            </Button>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Learn More
+                                            </Button>
+                                        </CardActions> */}
+                                    </Card>
+                                </Col>
+                                <Col xs={12} sm={6} md={4} lg={3}>
+                                    <Card id="fixA" className={classes.root}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                            className={classes.media}
+                                            image={alec}
+                                            title="Alec McGlone"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    Alec McGlone
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    Web Developer
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        {/* <CardActions>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Share
+                                            </Button>
+                                            <Button id='fixBtn' size="small" color="primary">
+                                                Learn More
+                                            </Button>
+                                        </CardActions> */}
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Container>
+
                         <Typography className={classes.title} id="missionStatement" color="textSecondary">
                             Mission Statement
                         </Typography>
@@ -96,13 +232,37 @@ const About = () => {
                     </Paper>
                     <Paper className={classes.paper}>
                         <Typography className={classes.title} id="storyTom" color="textSecondary">The Story of Tom</Typography>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="primary" id="dropdown-basic" id='fixBtn'>
+                                Table of Contents
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#missionStatement">Mission Statement</Dropdown.Item>
+                                <Dropdown.Item href="#storyTom">01 - Life as we knew it</Dropdown.Item>
+                                <Dropdown.Item href="#symptoms">02 - Strange Symptoms</Dropdown.Item>
+                                <Dropdown.Item href="#beginnning">03 - The Beginning</Dropdown.Item>
+                                <Dropdown.Item href="#little">04 - Little did we know</Dropdown.Item>
+                                <Dropdown.Item href="#diagnosis">05 - Diagnosis</Dropdown.Item>
+                                <Dropdown.Item href="#stepOne">06 - Step One... plus...</Dropdown.Item>
+                                <Dropdown.Item href="#stablization">07 - Stablization</Dropdown.Item>
+                                <Dropdown.Item href="#fastForward">08 - Fast Forward</Dropdown.Item>
+                                <Dropdown.Item href="#letsGet">09 - Let's Get to Thirty</Dropdown.Item>
+                                <Dropdown.Item href="#summer2020">10 - Summer time 2020...</Dropdown.Item>
+                                <Dropdown.Item href="#mid-summer">11 - Mid-Summer 2020...</Dropdown.Item>
+                                <Dropdown.Item href="#trip">12 - The Trip.</Dropdown.Item>
+                                <Dropdown.Item href="#serious">13 - Serious News.</Dropdown.Item>
+                                <Dropdown.Item href="#burial">14 - The Burial...</Dropdown.Item>
+                                <Dropdown.Item href="#future">15 - Future Hope and Promise...</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                         <Typography className={classes.title} color="textSecondary">Summary</Typography>
-                            <Typography className={classes.body} variant="body2" component="p">
-                                A number of years ago, our dear son Thomas James McGlone (20) came home from his second year of college, a stellar academic and athletic high school and beginning of college experience, asking for a break. He was on the fast track and needed a moment in time to sit on the bench. We said ok, gave him a break, and discovered his mental illness unfold during the next couple years. Many stories and chapters of chaotic behavior, modest stability, and back again to chaos. Around and round we went until the diagnosis: schizoaffective disorder.
-                            </Typography>
-                            <br></br>
-                        
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Typography className={classes.body} variant="body2" component="p">
+                            A number of years ago, our dear son Thomas James McGlone (20) came home from his second year of college, a stellar academic and athletic high school and beginning of college experience, asking for a break. He was on the fast track and needed a moment in time to sit on the bench. We said ok, gave him a break, and discovered his mental illness unfold during the next couple years. Many stories and chapters of chaotic behavior, modest stability, and back again to chaos. Around and round we went until the diagnosis: schizoaffective disorder.
+                        </Typography>
+                        <br></br>
+
+                        <Button href="#top" variant="light" id='fixBtn'>Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} color="textSecondary">
                             Life as we knew it...
@@ -146,7 +306,7 @@ const About = () => {
                             to bed.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="beginning" color="textSecondary">
                             The Beginning...
@@ -162,7 +322,7 @@ const About = () => {
                             older suburban and left a note that he was going to find work there.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="littleDid" color="textSecondary">
                             Little did we know...
@@ -177,7 +337,7 @@ const About = () => {
                             hospital. The beginning of the story of Tom’s illness.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="diagnosis" color="textSecondary">
                             Diagnosis...
@@ -206,7 +366,7 @@ const About = () => {
                             language, and of course, the politics of the health care system for best care.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="stepOne" color="textSecondary">
                             Step One...plus...
@@ -227,13 +387,13 @@ const About = () => {
                             care.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="stablization" color="textSecondary">
                             Stabilization...
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.body} variant="body2" component="p">
                             After many trials back and forth of running away, trouble with police, unsafe conditions beyond
@@ -241,7 +401,7 @@ const About = () => {
                             Vomiting. Headaches. Weight Gain. Depression. The list goes on...
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="fastForward" color="textSecondary">
                             Fast forward...
@@ -262,7 +422,7 @@ const About = () => {
                             to have an awareness (so smart) of his plight.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="letsGet" color="textSecondary">
                             Let’s Get to Thirty...
@@ -282,7 +442,7 @@ const About = () => {
                             insisted on more independence, freedom. Ok. Let’s see how to approach this next chapter.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="summer2020" color="textSecondary">
                             Summer time 2020...
@@ -300,7 +460,7 @@ const About = () => {
                             visit. He came home to rest.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="mid-summer" color="textSecondary">
                             Mid-Summer 2020...
@@ -314,7 +474,7 @@ const About = () => {
                             almost middle age adult nature due to his need for relaxation and calm lifestyle.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="trip" color="textSecondary">
                             The Trip.
@@ -331,7 +491,7 @@ const About = () => {
                             something was different.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="serious" color="textSecondary">
                             Serious News.
@@ -342,7 +502,7 @@ const About = () => {
                             way out. He committed suicide.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="burial" color="textSecondary">
                             The Burial...
@@ -357,7 +517,7 @@ const About = () => {
                             child.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                         <Typography className={classes.title} id="future" color="textSecondary">
                             Future Hope and Promise...
@@ -371,7 +531,7 @@ const About = () => {
                             Thank you for listening to our story.
                         </Typography>
                         <br></br>
-                        <Button href="#top" variant="light">Back to Top</Button>
+                        <Button id='fixBtn' href="#top" variant="light">Back to Top</Button>
                         <br></br>
                     </Paper>
                 </Grid>

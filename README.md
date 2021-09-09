@@ -42,15 +42,17 @@
   This application is now live at http://thetomfund.com/ too!
 
   ## Home Page
-  ![image of webpage](./images/Screenshot(67).png)
+  ![image of webpage](./images/Home.png)
   ## About Page
-  ![image of webpage](./images/Screenshot(68).png)
+  ![image of webpage](./images/About.png)
   ## Blog Page
-  ![image of webpage](./images/Screenshot(69).png)
+  ![image of webpage](./images/Blog.png)
   ## Profile Page
-  ![image of webpage](./images/Screenshot(71).png)
+  ![image of webpage](./images/Profile.png)
   ## Memories Page
-  ![image of webpage](./images/Screenshot(70).png)
+  ![image of webpage](./images/Memories.png)
+  ## Contact Page
+  ![image of webpage](./images/Contact.png)
 
   ## Contributing
 
@@ -66,6 +68,7 @@
 
   * Github Profile: [Alec74](https://github.com/Alec74)
   * alecmcglone@gmail.com
+  * My [LinkedIn](https://www.linkedin.com/in/alec-mcglone-900904206/)
   
   ## License
   Notice: This application is licensed under MIT

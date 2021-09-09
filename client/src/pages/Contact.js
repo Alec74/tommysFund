@@ -73,7 +73,7 @@ const handleFormSubmit = (event) => {
 const Contact = () => {
 
     return (
-        <div>
+        <div id="quick">
             <h1>Send Us an Email by Filling out this Form:</h1>
             <Form onSubmit={handleFormSubmit}>
                 <Form.Group className="mb-3" controlId="Subject.ControlInput1">
