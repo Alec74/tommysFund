@@ -1826,3 +1826,35 @@ label form [type='radio'] {
       -1px 1px 0 #000,
        1px 1px 0 #000;
 }
+
+#fixBtn {
+  background-color: aqua;
+}
+
+
+@media screen and (max-width: 1700px) {
+  #fixS, #fixM {
+    padding-bottom: 31.5px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #fixPa, #fixP {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #fixP {
+    padding-bottom: 0px;
+  }
+  #fixPa, #fixS, #fixA {
+    padding-bottom: 32.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fixPa, #fixM, #fixA {
+    padding-bottom: 0px;
+  }
+}
