@@ -1850,6 +1850,10 @@ label form [type='radio'] {
   padding-bottom: 32.5px;
 }
 
+#fixSong2 {
+  text-align: center;
+}
+
 #song3 {
   background-image: url("https://cdn.pixabay.com/photo/2020/02/24/18/05/background-4876988_1280.jpg");
   background-size: cover;
@@ -1972,7 +1976,7 @@ label form [type='radio'] {
     padding-bottom: 32.5px;
   }
   #song3 {
-    padding-bottom: 76px;
+    padding-bottom: 30px;
   }
   #song4 {
     padding-bottom: 32.5px;
@@ -1983,7 +1987,7 @@ label form [type='radio'] {
   .hide {
     display: none;
   }
-  #song3, #song6 {
+  #song1, #song2, #song3, #song4, #song5 #song6 {
     padding-bottom: 0px;
   }
 }

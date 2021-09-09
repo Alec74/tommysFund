@@ -127,22 +127,22 @@ const Memories = () => {
                 <br></br>
                 <Grid container spacing={3}>
 
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={12} sm={3}>
                         <FirstSongCard />
                     </Grid>
-                    <Grid item xs={6} sm={3}>
-                        <SecondSongCard />
+                    <Grid item xs={12} sm={3}>
+                        <SecondSongCard /> 
                     </Grid>
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={12} sm={3}>
                         <ThirdSongCard />
                     </Grid>
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={12} sm={3}>
                         <FourthSongCard />
                     </Grid>
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={12} sm={3}>
                         <FifthSongCard />
                     </Grid>
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={12} sm={3}>
                         <SixthSongCard />
                     </Grid>
                 </Grid>
