@@ -1816,7 +1816,7 @@ label form [type='radio'] {
   margin-top: 15px;
 }
 
-#txtOutline {
+.txtOutline {
   -webkit-text-stroke: 1px black;
    color: white;
    text-shadow:
@@ -1856,5 +1856,11 @@ label form [type='radio'] {
 @media screen and (max-width: 768px) {
   #fixPa, #fixM, #fixA {
     padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hide {
+    display: none;
   }
 }
