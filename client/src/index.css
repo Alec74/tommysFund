@@ -1796,3 +1796,18 @@ label form [type='radio'] {
 /* https://www.maxpixel.net/static/photo/1x/Background-Flare-Bokeh-Light-Header-Banner-1050616.jpg */
 
 
+/* @media (max-width: 1100px) {
+  #carousel {
+    width:auto;
+    height:auto;
+  }
+} */
+
+#carousel {
+  margin-top: 20px;
+}
+
+#cEdit {
+  max-height: 700px;
+  max-width: auto;
+}
