@@ -90,6 +90,8 @@ const Contact = () => {
                         Send mail!
                     </a>
                 </Button>
+                <br></br>
+                <br></br>
             </Form>
         </div>
     );

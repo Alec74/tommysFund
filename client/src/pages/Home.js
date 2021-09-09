@@ -62,8 +62,8 @@ export default function Home() {
                                     alt="First slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Family "Portrait"</h3>
-                                    <p>-Circa 2019</p>
+                                    <h3 class="txtOutline hide">Family "Portrait"</h3>
+                                    <p class="hide">-Circa 2019</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -74,7 +74,8 @@ export default function Home() {
                                     id="cEdit"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Baby Tom</h3>
+                                    <h3 class="txtOutline hide">Baby Tom</h3>
+                                    <p class="hide">-Circa 1996</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -84,8 +85,8 @@ export default function Home() {
                                     alt="Third slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Senior Night</h3>
-                                    <p>
+                                    <h3 class="txtOutline hide">Senior Night</h3>
+                                    <p class="hide">
                                         -Circa 2013
                                     </p>
                                 </Carousel.Caption>
@@ -97,8 +98,8 @@ export default function Home() {
                                     alt="Fourth slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">New Brother</h3>
-                                    <p style={{color:'black'}}>-Circa 1997</p>
+                                    <h3 class="txtOutline hide">New Brother</h3>
+                                    <p class="hide" style={{color:'black'}}>-Circa 1997</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -108,8 +109,8 @@ export default function Home() {
                                     alt="Fifth slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Happy 25th!</h3>
-                                    <p style={{color:'black'}}>-Circa 2020</p>
+                                    <h3 class="txtOutline hide">Happy 25th!</h3>
+                                    <p class="hide" style={{color:'black'}}>-Circa 2020</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -119,8 +120,8 @@ export default function Home() {
                                     alt="Sixth slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Father and Son</h3>
-                                    <p style={{color:'black'}}>-Circa 1999</p>
+                                    <h3 class="txtOutline hide">Father and Son</h3>
+                                    <p class="hide" style={{color:'black'}}>-Circa 1997</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -130,8 +131,8 @@ export default function Home() {
                                     alt="Seventh slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Alumni and High School Football Coach</h3>
-                                    <p>-Circa 2019</p>
+                                    <h3 class="txtOutline hide">Alumni and High School Football Coach</h3>
+                                    <p class="hide">-Circa 2019</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -141,8 +142,8 @@ export default function Home() {
                                     alt="Eighth slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3 id="txtOutline">Happy Thanksgiving!</h3>
-                                    <p style={{color:'black'}}>-Circa 2019</p>
+                                    <h3 class="txtOutline hide">Happy Thanksgiving!</h3>
+                                    <p class="hide" style={{color:'black'}}>-Circa 2019</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             
