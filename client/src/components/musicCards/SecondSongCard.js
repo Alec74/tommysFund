@@ -2,14 +2,14 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
+// import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+// // import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+// import SkipNextIcon from '@material-ui/icons/SkipNext';
 // import Song1 from '../playButtons/Song1'
-import Song2 from '../playButtons/Song2'
+// import Song2 from '../playButtons/Song2'
 // import two from '../../images/IMG_1542.JPG';
 
 
@@ -44,9 +44,9 @@ export default function FirstSongCard() {
   const theme = useTheme();
 
   return (
-    <Card id="song2" className={classes.root}>
+    <Card style={{textAlign: "center", justifyContent: "center"}} id="song2" className={classes.root}>
       <div className={classes.details}>
-        <CardContent  style={{textAlign: "center", justifyContent: "center"}} className={classes.content}>
+        <CardContent   className={classes.content}>
           <Typography component="h5" variant="h5">
             What Can I Become
           </Typography>
@@ -54,9 +54,9 @@ export default function FirstSongCard() {
             Thomas McGlone
           </Typography>
         </CardContent>
-        <div  style={{textAlign: "center", justifyContent: "center"}} className={classes.controls}>
+        {/* <div  style={{textAlign: "center", justifyContent: "center"}} className={classes.controls}>
           <Song2></Song2>
-        </div>
+        </div> */}
       </div>
     </Card>
   );

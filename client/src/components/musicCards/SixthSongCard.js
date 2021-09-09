@@ -2,13 +2,13 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-import Song6 from '../playButtons/Song6'
+// import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+// import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+// import SkipNextIcon from '@material-ui/icons/SkipNext';
+// import Song6 from '../playButtons/Song6'
 
 
 
@@ -53,9 +53,9 @@ export default function FifthSongCard() {
             Thomas McGlone
           </Typography>
         </CardContent>
-        <div className={classes.controls}>
+        {/* <div className={classes.controls}>
           <Song6></Song6>
-        </div>
+        </div> */}
       </div>
     </Card>
   );
