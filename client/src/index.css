@@ -1769,7 +1769,7 @@ label form [type='radio'] {
 #song6 {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcH8pY4QT80k0PrqyJPzsqEY1ZkJtmEWPqxg&usqp=CAU");
   background-size: cover;
-  padding-bottom: 65px;
+  padding-bottom: 32.5px;
 }
 
 /* #homeHero {
@@ -1842,25 +1842,46 @@ label form [type='radio'] {
   #fixPa, #fixP {
     padding-bottom: 32px;
   }
+  #song2 {
+    padding-bottom: 0px;
+  }
 }
 
-@media screen and (max-width: 990px) {
-  #fixP {
+@media screen and (max-width: 991px) {
+  #fixP, #song4 {
     padding-bottom: 0px;
   }
   #fixPa, #fixS, #fixA {
     padding-bottom: 32.5px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  #fixPa, #fixM, #fixA {
+  #song5 {
     padding-bottom: 0px;
+  }
+  #song6 {
+    padding-bottom: 65px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
+  #fixPa, #fixM, #fixA {
+    padding-bottom: 0px;
+  }
+  #song6 {
+    padding-bottom: 32.5px;
+  }
+  #song3 {
+    padding-bottom: 76px;
+  }
+  #song4 {
+    padding-bottom: 32.5px;
+  }
+}
+
+@media screen and (max-width: 599px) {
   .hide {
     display: none;
+  }
+  #song3, #song6 {
+    padding-bottom: 0px;
   }
 }
