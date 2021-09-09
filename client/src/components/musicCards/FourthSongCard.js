@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
-import Song1 from '../playButtons/Song1'
+import Song1 from '../playButtons/Song4'
 import Song2 from '../playButtons/Song2'
 
 
